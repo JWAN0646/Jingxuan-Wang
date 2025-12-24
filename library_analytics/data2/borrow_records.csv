@@ -1,0 +1,2 @@
+borrow_id,user_id,user_type,book_id,book_type,borrow_date,return_date,borrow_days
+B1766575514,U1001,student,BK001,Physical book,2025-12-24,,

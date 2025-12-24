@@ -17,7 +17,7 @@ def user_type(self):
         return 'other'
 
 
-class User(ABC):
+class User:
     def __init__(self, user_id, password, name, role, department):
         self.user_id = user_id
         self.password = password
@@ -29,20 +29,19 @@ class User(ABC):
     def __str__(self):
         return (f'user_id: {self.user_id},password: {self.password},name: {self.name}, role: {self.role}, department: {self.department}')
 
-def load_users(users_file: str) -> dict:
-    users = {}
+def load_users(users_file: str) -> list:
+    users = []
     with open (users_file, "r") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            user_id = row['user_id']
-            users[user_id] = {
+            users.append({
                
                 'password': row['password'],
                 'name': row['name'],
                 'role': row['role'],
                 'department': row['department'],
-                'user_id':user_id
-            }
+                'user_id': row['user_id']
+            })
             
     return users
         

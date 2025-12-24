@@ -4,6 +4,13 @@ import csv
 import datetime
 import typing
 import sys
+
+
+
+
+
+
+
 #Load borrowing records.
 def load_loans(loans_file: str):
     loans = []
