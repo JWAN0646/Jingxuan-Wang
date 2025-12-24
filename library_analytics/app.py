@@ -37,9 +37,8 @@ def borrow_book(user_id: str, role: str, book_id: str, book_type: str):
     print("✅ Borrow recorded:", borrow_id)
 
 if __name__ == "__main__":
-    borrow_book(
-        user_id="U1001",
-        role="student",
-        book_id="BK001",
-        book_type="Physical book"
-    )
+    borrow_book("U1001", "student", "BK001", "Physical book")
+    borrow_book("U1002", "staff", "BK002", "Physical book")
+    borrow_book("U1003", "student", "BK001", "Physical book")
+    borrow_book("U1004", "other", "BK003", "Online")
+    borrow_book("U1005", "student", "BK004", "Physical book")
