@@ -1,3 +1,8 @@
 borrow_id,user_id,user_type,book_id,book_type,borrow_date,return_date,borrow_days
 B1766575514,U1001,student,BK001,Physical book,2025-12-24,,
 B1766575796,U1001,student,BK001,Physical book,2025-12-24,,
+B1766576394,U1001,student,BK001,Physical book,2025-12-24,,
+B1766576394,U1002,student,BK002,Physical book,2025-12-24,,
+B1766576394,U1003,student,BK001,Physical book,2025-12-24,,
+B1766576394,U1004,other,BK003,Online,2025-12-24,,
+B1766576394,U1005,student,BK004,Physical book,2025-12-24,,

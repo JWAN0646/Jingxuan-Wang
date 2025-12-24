@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Library Borrowing Analytics</title>
+</head>
+<body>
+    <h1>Library Borrowing Analytics Dashboard</h1>
+
+    <h2>Borrow count by user type</h2>
+    <ul>
+        {% for k, v in borrow_by_user_type.items() %}
+            <li>{{ k }}: {{ v }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Top borrowed books</h2>
+    <ul>
+        {% for k, v in top_books.items() %}
+            <li>{{ k }}: {{ v }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Borrow type distribution</h2>
+    <ul>
+        {% for k, v in book_type_dist.items() %}
+            <li>{{ k }}: {{ v }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
