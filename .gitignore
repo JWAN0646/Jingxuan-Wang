@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Python virtual environment
+.venv/
+
+# GIS data
+*.tif
+*.tiff
+*.gpkg
+
+# Python
+__pycache__/
+*.pyc
